@@ -25,7 +25,7 @@ namespace RegDate
                 connection.Open();
                 command = new SqlCommand
                 (
-                    "Insert into Students Values (@Fname,@Sname,@Email,@PaymantDay,@Age)"
+                    "Insert Into Students Values (@Fname,@Sname,@Email,@PaymantDay,@Age)"
                     , connection
                     );
 
@@ -37,6 +37,8 @@ namespace RegDate
                 command.ExecuteNonQuery();
                 MessageBox.Show("Your inpud adding datebase");
                 connection.Close();
+                GetClear();
+                GetSelectRecorder();
             }
             else
             {
@@ -60,10 +62,12 @@ namespace RegDate
             {
                 if (item is TextBox)
                 {
-                    if (item.Text.Length == 0)
+                    
+                    if (item.Text.Length == 0 )
                     {
                         return false;
                     }
+                    txtFnameFiltr.Text = " ";
                 }
             }
             return true;
@@ -161,6 +165,7 @@ namespace RegDate
             dataGridView1.DataSource = table;
             connection.Close();
             GetClear();
+           
         }
 
         private void btSearch_Click(object sender, EventArgs e)

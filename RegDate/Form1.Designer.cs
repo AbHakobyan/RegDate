@@ -202,10 +202,9 @@ namespace RegDate
             this.btFiltr.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btFiltr.Location = new System.Drawing.Point(1008, 118);
             this.btFiltr.Name = "btFiltr";
-            this.btFiltr.Size = new System.Drawing.Size(110, 47);
+            this.btFiltr.Size = new System.Drawing.Size(131, 47);
             this.btFiltr.TabIndex = 3;
             this.btFiltr.Text = "Որոնել";
-            this.btFiltr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btFiltr.UseVisualStyleBackColor = false;
             this.btFiltr.Click += new System.EventHandler(this.btFiltr_Click);
             // 
@@ -233,7 +232,7 @@ namespace RegDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(796, 450);
             this.Controls.Add(this.btXmbagrel);
             this.Controls.Add(this.btFiltr);
